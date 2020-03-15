@@ -1,4 +1,4 @@
-# GuessGame improved
+#GuessGame improved
 import random
 
 print("Hello ! What's your name ?")
@@ -16,34 +16,34 @@ if answer == 0:
     guessNumber = int(guessNumber)
 
     if guessNumber > number :
-      print("Nope ! Too high. Try again.")
-      guessesTaken += 1
+        print("Nope ! Too high. Try again.")
+        guessesTaken += 1
 
     if guessNumber < number :
-      print("Nope ! Too low. Try again.")
-      guessesTaken += 1
+        print("It's too low. Try again !")
+        guessesTaken += 1
 
     if guessNumber == number :
-      guessesTaken += 1
-      anwser = 1
-      break
+        guessesTaken += 1
+        answer = 1
+        break
 
-if answer == 0 :
+if answer == 0:
   print("Try to guess it.")
   guessNumber = input("")
   guessNumber = int(guessNumber)
 
   if guessNumber > number :
-    print("Nope ! Too high. Last try.")
-    guessesTaken += 1
+      print("Nope ! Too high. Last try.")
+      guessesTaken += 1
 
   if guessNumber < number :
-    print("Nope ! Too low. Last try.")
-    guessesTaken += 1
+      print("It's too low. Last try kid.")
+      guessesTaken += 1
 
   if guessNumber == number :
-    guessesTaken += 1
-    answer = 1
+      guessesTaken += 1
+      answer = 1
 
 
 if answer == 0:
@@ -51,17 +51,17 @@ if answer == 0:
   guessNumber = input("")
   guessNumber = int(guessNumber)
 
-  if guessNumber > number : 
-    print("Nope ! Too high.")
-    guessesTaken += 1
+  if guessNumber > number :
+      print("Nope ! Too high.")
+      guessesTaken += 1
 
   if guessNumber < number :
-    print("It's too low.")
-    guessesTaken += 1
+      print("It's too low.")
+      guessesTaken += 1
 
   if guessNumber == number :
-    guessesTaken += 1
-    answer = 1
+      guessesTaken += 1
+      answer = 1
 
 if guessNumber == number :
   guessesTaken = str(guessesTaken)
